@@ -1,0 +1,219 @@
+.header_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url("https://i.imgur.com/vX6YCpa.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 2rem;
+}
+
+.top_text {
+  margin-top: 80px;
+  font-family: "th";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.couple_name {
+  font-size: 6rem;
+  line-height: 170%;
+  margin-bottom: -20px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  letter-spacing: 0rem;
+  font-family: "am";
+}
+
+.couple_name span {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.wedd_date {
+  font-size: 2.9rem;
+  font-family: "th";
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.save {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  font-family: "th";
+  font-weight: 300;
+  position: relative;
+}
+
+.save:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+  bottom: -10px;
+  left: 25%;
+}
+
+.sve_btn {
+  margin-top: 20px;
+  border: none;
+  position: relative;
+  background-color: #8c9dad;
+  padding: 10px 60px;
+  z-index: 3;
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-family: "th";
+  font-weight: 500;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+
+.sve_btn::before {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "";
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8c9dad;
+  top: -10px;
+  right: -10px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .couple_name {
+    font-size: 4.5rem;
+    line-height: 150%;
+  }
+
+  .wedd_date {
+    font-size: 2.2rem;
+  }
+
+  .sve_btn {
+    font-size: 32px;
+    padding: 8px 50px;
+  }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .top_text {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  .couple_name {
+    font-size: 3.5rem;
+    line-height: 140%;
+    /* margin-bottom: -15px; */
+  }
+
+  .wedd_date {
+    font-size: 1.8rem;
+  }
+
+  .save {
+    font-size: 1.2rem;
+  }
+
+  .header_container{
+    min-height: 70vh;
+  }
+
+  .sve_btn {
+    font-size: 28px;
+    padding: 8px 40px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .header_container {
+    padding: 1rem;
+  }
+
+  .top_text {
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .couple_name {
+    font-size: 2.2rem;
+    line-height: 120%;
+    margin-bottom: 20px;
+    /* margin-bottom: -10px; */
+  }
+
+  .wedd_date {
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .save {
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+    margin: 1.5rem 0;
+  }
+
+  .save:after {
+    width: 70%;
+    left: 15%;
+  }
+
+  .sve_btn {
+    font-size: 20px;
+    padding: 6px 30px;
+    letter-spacing: 1px;
+  }
+
+  .sve_btn::before {
+    top: -8px;
+    right: -8px;
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 360px) {
+  .couple_name {
+    font-size: 1.8rem;
+  }
+
+  .wedd_date {
+    font-size: 1.1rem;
+  }
+
+  .sve_btn {
+    font-size: 18px;
+    padding: 5px 25px;
+  }
+}

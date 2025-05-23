@@ -1,0 +1,150 @@
+.count_grid {
+  display: grid;
+  gap: 20px;
+  padding: 50px 40px 0px 40px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cc {
+  background-position: center center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  padding: 70px 30px;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1554197202-8c9f8094d786?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  width: 100%;
+}
+
+.count_sub {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.day {
+  font-size: 100px;
+  margin-bottom: 20px;
+  font-family: "hel";
+  margin-bottom: 10px;
+}
+
+.count_title {
+  font-family: "am";
+  font-size: 40px;
+}
+
+.rt {
+  font-family: "th";
+  font-size: 30px;
+  text-align: center;
+  margin-right: -40px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+  .count_grid {
+    padding: 40px 30px 0px 30px;
+    gap: 15px;
+  }
+  
+  .cc {
+    padding: 50px 20px;
+  }
+  
+  .day {
+    font-size: 80px;
+  }
+  
+  .count_title {
+    font-size: 32px;
+  }
+  
+  .rt {
+    font-size: 24px;
+    margin-right: -30px;
+  }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .count_grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 20px 0px 20px;
+    gap: 15px;
+  }
+  
+  .cc {
+    padding: 40px 15px;
+  }
+  
+  .day {
+    font-size: 70px;
+  }
+  
+  .count_title {
+    font-size: 28px;
+  }
+  
+  .rt {
+    font-size: 20px;
+    margin-right: -20px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 576px) {
+  .count_grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 15px 0px 15px;
+    gap: 42px;
+  }
+  
+  .cc {
+    padding: 35px 15px;
+  }
+  
+  .day {
+    font-size: 60px;
+    margin-bottom: 8px;
+  }
+  
+  .count_title {
+    font-size: 24px;
+  }
+  
+  .rt {
+    font-size: 18px;
+    margin-right: 0;
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 400px) {
+  .count_grid {
+    padding: 20px 10px 0px 10px;
+  }
+  
+  .cc {
+    padding: 30px 10px;
+  }
+  
+  .day {
+    font-size: 50px;
+  }
+  
+  .count_title {
+    font-size: 20px;
+  }
+  
+  .rt {
+    font-size: 16px;
+  }
+}

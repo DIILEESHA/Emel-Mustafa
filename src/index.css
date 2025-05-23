@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "am";
+  src: url("../public/fonts/am.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "th";
+  src: url("../public/fonts/th.otf") format("woff2");
+  font-weight: normal;
+
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "hel";
+  src: url("../public/fonts/hel2.otf") format("woff2");
+  font-weight: normal;
+
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.floating-hearts-container {
+  position: fixed;
+  z-index: 100;
+  opacity: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+:root {
+  --soft: #C4A68A;
+  --blue: #8c9dad;
+}

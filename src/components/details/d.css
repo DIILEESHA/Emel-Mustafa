@@ -1,0 +1,240 @@
+.detail_banner {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("https://images.pexels.com/photos/169206/pexels-photo-169206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.wedding_banner_title {
+  font-family: "th";
+  color: #fff;
+  font-size: 70px;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+.extras {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 60px 70px;
+  position: relative;
+}
+
+.hj {
+  text-align: center;
+  display: none;
+  font-size: 70px;
+  font-family: "th";
+  color: var(--soft);
+  margin-bottom: 30px;
+}
+
+.extra_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.extra {
+  flex: 1;
+}
+
+.line {
+  background-color: black;
+  width: 2px;
+  height: 100px;
+}
+
+.io {
+  width: 100px;
+}
+
+.one {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.extra_title {
+  color: var(--soft);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 50px;
+  font-family: "th";
+}
+
+.extra_date {
+  color: var(--blue);
+  font-weight: bold;
+  line-height: 100%;
+  font-family: "hel";
+  font-size: 25px;
+}
+
+.dd {
+  width: 70%;
+  line-height: 150%;
+}
+
+.extra_time {
+  margin-top: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "hel";
+  color: var(--soft);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .wedding_banner_title {
+    font-size: 50px;
+  }
+  
+  .extras {
+    padding: 50px 40px;
+  }
+  
+  .extra_flex {
+    gap: 30px;
+  }
+  
+  .extra_title {
+    font-size: 40px;
+  }
+  
+  .extra_date {
+    font-size: 20px;
+  }
+  
+  .extra_time {
+    font-size: 18px;
+  }
+  
+  .line {
+    height: 80px;
+  }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .detail_banner {
+    height: 40vh;
+  }
+  
+  .wedding_banner_title {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  
+  .extras {
+    padding: 40px 30px;
+  }
+  
+  .extra_flex {
+    gap: 20px;
+  }
+  
+  .extra_title {
+    font-size: 32px;
+  }
+  
+  .extra_date {
+    font-size: 18px;
+  }
+  
+  .extra_time {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  .line {
+    height: 60px;
+  }
+  
+  .dd {
+    width: 85%;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  .extra_flex {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .line {
+    width: 100px;
+    height: 2px;
+  }
+  
+  .one {
+    width: 100%;
+  }
+  
+  .dd {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail_banner {
+    height: 30vh;
+  }
+  
+  .wedding_banner_title {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  
+  .extras {
+    padding: 30px 20px;
+  }
+  
+  .extra_title {
+    font-size: 28px;
+  }
+  
+  .extra_date {
+    font-size: 16px;
+  }
+  
+  .extra_time {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 360px) {
+  .wedding_banner_title {
+    font-size: 26px;
+  }
+  
+  .extra_title {
+    font-size: 24px;
+  }
+  
+  .extra_date {
+    font-size: 14px;
+  }
+  
+  .extra_time {
+    font-size: 12px;
+  }
+}
